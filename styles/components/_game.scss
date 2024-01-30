@@ -1,0 +1,23 @@
+// Copyright (c) 2023 ~ 2024 Arthur Kasparian, Individual All Rights Reserved
+// Unauthorized copying of this file, via any medium is strictly prohibited
+// Proprietary and confidential
+// Written by Arthur Kasparian <contact@arthurkasparian.dev>, Month 1 2024. Last modified 27/01/2024, 4:17 pm
+
+main {
+
+  div {
+    width: fit-content;
+
+    transition: left .4s ease .005s;
+
+    position: absolute;
+    left: calc(30svh * var(--n));
+  }
+
+  .column1 { --n: 1; }
+  .column2 { --n: 2; }
+  .column3 { --n: 3; }
+  .column4 { --n: 4; }
+  .column5 { --n: 5; }
+
+}

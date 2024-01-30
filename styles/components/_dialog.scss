@@ -1,0 +1,48 @@
+// Copyright (c) 2023 ~ 2024 Arthur Kasparian, Individual All Rights Reserved
+// Unauthorized copying of this file, via any medium is strictly prohibited
+// Proprietary and confidential
+// Written by Arthur Kasparian <contact@arthurkasparian.dev>, Month 1 2024. Last modified 30/01/2024, 8:26 pm
+
+dialog {
+  background-color: lightpink;
+
+  padding: 20px;
+  border-radius: 12px;
+  border-color: black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  button {
+    padding: 2px 12px;
+    margin-top: 8px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  a {
+    margin-left: 12px;
+  }
+
+  div {
+    margin: 12px 0;
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  &::backdrop {
+    background-color: black;
+    opacity: .9;
+  }
+
+  #dead-rabbit {
+    display: inline-block;
+    transform: scaleY(-1);
+    width: fit-content;
+  }
+}

@@ -1,0 +1,117 @@
+body {
+  height: 100svh;
+  width: 100svw;
+  display: grid;
+  grid-template-areas: "info game";
+  grid-template-columns: 0fr 1fr;
+}
+body main {
+  grid-area: game;
+  font-size: 2svw;
+}
+body aside {
+  grid-area: info;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+#player {
+  top: 75svh;
+}
+
+.wall {
+  top: 85svh;
+}
+
+#rabbit, #tree, #herb {
+  top: 90svh;
+}
+
+aside {
+  padding: 40px;
+  width: 10svw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 8px;
+}
+aside div {
+  padding-bottom: 20px;
+}
+aside #pause-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+
+main div {
+  width: fit-content;
+  transition: left 0.4s ease 0.005s;
+  position: absolute;
+  left: calc(30svh * var(--n));
+}
+main .column1 {
+  --n: 1;
+}
+main .column2 {
+  --n: 2;
+}
+main .column3 {
+  --n: 3;
+}
+main .column4 {
+  --n: 4;
+}
+main .column5 {
+  --n: 5;
+}
+
+dialog {
+  background-color: lightpink;
+  padding: 20px;
+  border-radius: 12px;
+  border-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog button {
+  padding: 2px 12px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+dialog a {
+  margin-left: 12px;
+}
+dialog div {
+  margin: 12px 0;
+}
+dialog div ul {
+  list-style: none;
+}
+dialog::backdrop {
+  background-color: black;
+  opacity: 0.9;
+}
+dialog #dead-rabbit {
+  display: inline-block;
+  transform: scaleY(-1);
+  width: fit-content;
+}
+
+body, button {
+  background-color: lightpink;
+  font-family: cursive;
+  font-size: 0.85em;
+}
+
+/*# sourceMappingURL=styles.css.map */

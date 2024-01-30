@@ -1,0 +1,119 @@
+<!--
+  Copyright (c) 2023 ~ 2024 Arthur Kasparian, Individual All Rights Reserved
+  Unauthorized copying of this file, via any medium is strictly prohibited
+  Proprietary and confidential
+  Written by Arthur Kasparian <contact@arthurkasparian.dev>, Month 1 2024. Last modified 27/01/2024, 12:52 am
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="scripts/main.js" type="module"></script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐰0</text></svg>">
+
+    <title>Save the Rabbit!</title>
+</head>
+<body>
+
+<dialog>
+    <h2>Damn! Your rabbit died! <span id="dead-rabbit">🐇</span></h2>
+
+    <div>
+        <h3>You finished with:</h3>
+        <ul>
+            <li id="final-score">Score: </li>
+            <li id="final-rabbits">Saved: </li>
+        </ul>
+    </div>
+
+    <button onclick="location.reload()">Retry? :)</button>
+    <a href="https://slowlyalyona.github.io">Website</a>
+    <a href="https://web.slowly.app">Slowly</a>
+</dialog>
+
+<main>
+
+    <div id="player" class="column1">🐰</div>
+
+    <div id="wall1" class="wall column1">
+        🧱
+    </div>
+
+    <div id="wall2" class="wall column2">
+        🧱
+    </div>
+
+    <div id="wall3" class="wall column3">
+        🧱
+    </div>
+
+    <div id="wall4" class="wall column4">
+        🧱
+    </div>
+
+    <div id="wall5" class="wall column5">
+        🧱
+    </div>
+
+    <div id="herb" class="column5">🌿</div>
+
+    <div id="rabbit" class="column1">🐇</div>
+
+    <div id="tree" class="column1">🌳</div>
+
+</main>
+
+<aside>
+
+    <div>
+        <h3>Some general info about the game:</h3>
+        <br>
+
+        <ul>
+            <li>🦊: Fast but weak</li>
+            <li>🐦‍⬛: Fast but weak</li>
+            <li>🐺: Slow but very tough</li>
+            <li>🦉: Slow but strong</li>
+            <li>🦊&🐺: Always stick to land</li>
+            <li>🐦‍⬛&🦉: Sometimes fly so you might miss</li>
+            <li>Once the walls behind you break, your rabbit is vulnerable and might get eaten!</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Controls:</h3>
+        <br>
+
+        <ul>
+            <li>T: Start game</li>
+            <li>Esc: Pause game</li>
+            <li>A/<-: Go left</li>
+            <li>D/->: Go Right</li>
+            <li>W/^: Shoot</li>
+        </ul>
+    </div>
+
+    <h3 id="round" style="margin: 16px 0">
+        Round: 0
+    </h3>
+
+    <p id="rabbits">
+        Saved 🐇: 0
+    </p>
+
+    <p id="score">
+        Kills: 0
+    </p>
+
+    <button id="pause-button">
+        Pause
+    </button>
+
+</aside>
+
+</body>
+</html>

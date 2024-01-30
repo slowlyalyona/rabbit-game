@@ -1,0 +1,24 @@
+// Copyright (c) 2023 ~ 2024 Arthur Kasparian, Individual All Rights Reserved
+// Unauthorized copying of this file, via any medium is strictly prohibited
+// Proprietary and confidential
+// Written by Arthur Kasparian <contact@arthurkasparian.dev>, Month 1 2024. Last modified 27/01/2024, 3:56 pm
+
+body {
+  height: 100svh;
+  width: 100svw;
+  display: grid;
+  grid-template-areas: "info game";
+  grid-template-columns: 0fr 1fr;
+
+
+  main {
+    grid-area: game;
+
+    font-size: 2svw;
+  }
+
+  aside {
+    grid-area: info;
+  }
+
+}
